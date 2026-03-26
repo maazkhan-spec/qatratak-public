@@ -25,7 +25,77 @@ so this project flips it into something visual:
 * ignore it → everything dries out
 
 simple loop, real meaning.
+### Part 2: ML Water Savings Calculator
+- Predicts daily water savings based on habits
+- 97% accuracy model
+- 20+ real-world test cases
+- Personalized recommendations
 
+---
+
+## 🤖 ML Model
+
+### Performance
+| Metric | Value |
+|--------|-------|
+| Model Accuracy | 97% (R² score) |
+| Training Data | 60 realistic UAE household scenarios |
+| Test Cases | 20 real-world scenarios |
+| Prediction Range | 43L - 96.4L per day |
+
+### Features (9 Inputs)
+1. Kitchen taps closed (0-3)
+2. Bathroom taps closed (0-2)
+3. Outdoor taps closed (0-1)
+4. Shower duration (minutes)
+5. Plant watering instances (0-4)
+6. Washing machine cycles (0-3)
+7. Car washes (0-1)
+8. Toilet type (regular/lowflow)
+9. Lawn irrigation method (drip/sprinkler/none)
+
+### Test Results
+- **Eco-conscious households:** 85-96L savings
+- **Medium usage:** 65-85L savings
+- **High usage:** 43-65L savings
+
+---
+
+## 🏗️ Tech Stack
+
+**Frontend:**
+- Next.js + TypeScript
+- Tailwind CSS
+- React
+
+**Backend:**
+- Python (scikit-learn)
+  
+**ML:**
+- Linear Regression model
+- LabelEncoder for categorical features
+- joblib for model serialization
+
+---
+
+## 📊 Real-World Impact
+
+Based on 20 test scenarios:
+- **7 eco-conscious households** can save 85-96L daily
+- **5 medium-usage households** can save 65-85L daily
+- **8 high-usage households** can save 43-65L daily
+- **Average potential savings:** 72.9L per day
+
+---
+
+## 🎮 How It Works
+
+### User Journey
+1. Fill in water usage habits
+2. ML model processes input
+3. Gets personalized savings prediction
+4. Sees impact visualization
+5. Gets conservation tips
 ---
 
 ## 🎮 what’s in it
